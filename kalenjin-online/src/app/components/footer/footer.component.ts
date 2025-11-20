@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   template: `
     <footer class="bg-pink-50 mt-auto">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
@@ -45,9 +46,9 @@ import { CommonModule } from '@angular/common';
           <div>
             <h4 class="text-gray-900 font-semibold text-base mb-4">Explore</h4>
             <ul class="space-y-2">
-              <li><a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Communities</a></li>
-              <li><a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Culture</a></li>
-              <li><a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Music</a></li>
+              <li><a routerLink="/communities" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Communities</a></li>
+              <li><a routerLink="/culture" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Culture</a></li>
+              <li><a routerLink="/music" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Music</a></li>
               <li><a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Events</a></li>
               <li><a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Shop</a></li>
               <li><a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Donate</a></li>
@@ -119,7 +120,7 @@ import { CommonModule } from '@angular/common';
           <div class="flex space-x-6">
             <a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Privacy Policy</a>
             <a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">Terms of Service</a>
-            <a href="#" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">About Us</a>
+            <a routerLink="/about" class="text-gray-600 text-sm hover:text-purple-600 transition-colors">About Us</a>
           </div>
         </div>
       </div>
