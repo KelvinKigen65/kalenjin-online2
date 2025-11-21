@@ -1,20 +1,20 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
-import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FooterComponent],
+  imports: [],
   template: `
-    <div class="min-h-screen flex flex-col">
-      <app-header></app-header>
-      <router-outlet></router-outlet>
-      <app-footer></app-footer>
+    <div class="min-h-screen bg-purple-600 flex items-center justify-center">
+      <div class="bg-white p-8 rounded-lg shadow-xl">
+        <h1 class="text-4xl font-bold text-purple-600 mb-4">
+          ✅ It's Working!
+        </h1>
+        <p class="text-xl text-gray-700">
+          Angular and Tailwind are connected.
+        </p>
+      </div>
     </div>
   `
 })
-export class AppComponent {
-  title = 'kalenjin-online';
-}
+export class AppComponent {}
