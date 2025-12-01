@@ -51,7 +51,7 @@ interface CulturalAspect {
           <h2 class="text-3xl font-bold text-gray-900 mb-8">Traditional Clothing</h2>
           <div class="prose max-w-none text-gray-600">
             <p class="text-lg leading-relaxed mb-4">
-              Traditional Kalenjin clothing reflects the community's pastoral heritage and warrior traditions.
+              T.
               Men traditionally wore animal skins and decorated themselves with ornaments made from beads,
               copper, and brass.
             </p>
